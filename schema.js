@@ -37,7 +37,7 @@ const QueryType = new GraphQLObjectType({
       },
       // there could be an ajax
       resolve: (root, args) => ({
-        id: 2,
+        id: args.id,
         username: 'alice',
         first_name: 'Alice',
         last_name: 'Ts',
