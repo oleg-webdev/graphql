@@ -5,7 +5,7 @@ import graphQLHTTP from 'express-graphql';
 import schema from './schema';
 
 const app = express();
-app.use('/graphql', favicon(__dirname + '/favicon.ico'));
+app.use('/', favicon(__dirname + '/favicon.ico'));
 
 // const users = fetch('https://randomuser.me/api/');
 // users

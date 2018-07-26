@@ -38,15 +38,14 @@ const QueryType = new GraphQLObjectType({
       // there could be an ajax
       resolve: (root, args) => ({
         id: args.id,
-        username: 'alice',
+        username: args.name,
         first_name: 'Alice',
         last_name: 'Ts',
         email: 'alice@gmail.com'
       })
     }
   })
-})
-
+});
 
 export default new GraphQLSchema({
   query: QueryType
